@@ -1,4 +1,4 @@
-me: content-web
+name: content-web
 
 # This workflow is triggered on push to the 'content-web' directory of the  master branch of the repository
 on:
