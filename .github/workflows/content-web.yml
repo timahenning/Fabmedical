@@ -4,9 +4,9 @@ me: content-web
 on:
    push:
       branches:
-      - master
+         - master
       paths:
-      - 'content-web/**'
+         - 'content-web/**'
 
   # Configure workflow to also support triggering manually
    workflow_dispatch:
