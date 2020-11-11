@@ -8,13 +8,13 @@ on:
       paths:
       - 'content-web/**'
 
-# Configure workflow to also support triggering manually
-workflow_dispatch:
-   inputs:
-      logLevel:
-      description: 'Log level'
-      required: true
-      default: 'warning'
+  # Configure workflow to also support triggering manually
+   workflow_dispatch:
+      inputs:
+         logLevel:
+         description: 'Log level'
+         required: true
+         default: 'warning'
 
 # Environment variables are defined so that they can be used throughout the job definitions.
 env:
@@ -25,7 +25,7 @@ env:
    dockerfilePath: './content-web'
    tag: '${{ github.run_id  }}'
 
-# Jobs define the actions that take place when code is pushed to the master branch
+  # Jobs define the actions that take place when code is pushed to the master branch
 jobs:
    build-and-publish-docker-image:
       name: Build and Push Docker Image
